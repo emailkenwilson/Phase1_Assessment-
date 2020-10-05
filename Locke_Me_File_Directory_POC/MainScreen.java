@@ -63,7 +63,8 @@ public class MainScreen {
 		    		WelcomeScreenDetailsCMD.WelcomeScreenDisplay();
 		           break;			           
 		        case "X" :
-			           System.out.println("Exiting Application..");
+			           System.out.println("Exiting Application..\n");
+			           System.out.println("<<<Application Exited>>>");
 			           SessionStatus = "Exit";
 			           break;
 		        default :
@@ -83,8 +84,7 @@ public class MainScreen {
 				userCommand = cmdObj.nextLine(); 
 				switch(userCommand) {
 		        case "E" :
-		        	DisplayDirectory CurrentDirectory=new DisplayDirectory(); 
-		        	CurrentDirectory.DisplayDirectoryOption(RootDirectory.BuildDirectory());
+		        	System.out.println("<<<Application Entered>>>\n");
 		        	SessionStatus = "Enter";
 		           break;		           
 		        default :
